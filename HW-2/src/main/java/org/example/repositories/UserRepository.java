@@ -4,7 +4,7 @@ package org.example.repositories;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-import ru.geekbrains.homeWork2.model.User;
+import HW-2.model.User;
 import java.util.List;
 
 /**
@@ -41,18 +41,6 @@ public class UserRepository {
         };
 
         return jdbc.query(sql, userRowMapper);
-    }
-
-    /**
-     * Метод для сохранения нового пользователя в базе данных.
-     *
-     * @param user пользователь для сохранения
-     * @return сохраненный пользователь
-     */
-    public User save(User user) {
-        String sql = "INSERT INTO userTable (firstName, lastName) VALUES (?, ?)";
-        jdbc.update(sql, user.getFirstName(), user.getLastName());
-        return user;
     }
 
     /**
