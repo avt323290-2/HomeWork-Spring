@@ -4,7 +4,7 @@ package org.example.repositories;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
-import HW-2.model.User;
+import HW_2.model.User;
 import java.util.List;
 
 /**

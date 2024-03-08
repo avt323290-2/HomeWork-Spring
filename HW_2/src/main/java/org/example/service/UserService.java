@@ -1,8 +1,10 @@
 package org.example.service;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.geekbrains.homeWork2.model.User;
 import ru.geekbrains.homeWork2.repositories.UserRepository;
+
 import java.util.List;
 
 /**
