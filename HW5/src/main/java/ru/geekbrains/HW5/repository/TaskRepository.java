@@ -2,8 +2,8 @@ package ru.geekbrains.HW5.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import ru.geekbrains.SpringHW5.model.Task;
-import ru.geekbrains.SpringHW5.model.TaskStatus;
+import ru.geekbrains.HW5.model.Task;
+import ru.geekbrains.HW5.model.TaskStatus;
 
 import java.util.List;
 

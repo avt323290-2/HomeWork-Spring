@@ -2,9 +2,9 @@ package ru.geekbrains.HW5.controllers;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import ru.geekbrains.SpringHW5.model.Task;
-import ru.geekbrains.SpringHW5.model.TaskStatus;
-import ru.geekbrains.SpringHW5.service.TaskService;
+import ru.geekbrains.HW5.model.Task;
+import ru.geekbrains.HW5.model.TaskStatus;
+import ru.geekbrains.HW5.service.TaskService;
 
 import java.time.LocalDateTime;
 import java.util.List;

@@ -2,15 +2,12 @@ package ru.geekbrains.HW5.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import ru.geekbrains.SpringHW5.model.Task;
-import ru.geekbrains.SpringHW5.model.TaskStatus;
-import ru.geekbrains.SpringHW5.repository.TaskRepository;
+import ru.geekbrains.HW5.model.Task;
+import ru.geekbrains.HW5.model.TaskStatus;
+import ru.geekbrains.HW5.repository.TaskRepository;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
