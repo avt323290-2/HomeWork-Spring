@@ -14,11 +14,12 @@
         <module name="homeWork2" />
         <module name="HW-4" />
         <module name="HW3" />
-        <module name="HW-5" />
+        <module name="SpringHW5" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="HW-2" target="21" />
+      <module name="HW-5" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -26,6 +27,7 @@
       <module name="HW-4" options="-parameters" />
       <module name="HW-5" options="-parameters" />
       <module name="HW3" options="-parameters" />
+      <module name="SpringHW5" options="-parameters" />
       <module name="homeWork2" options="-parameters" />
     </option>
   </component>
