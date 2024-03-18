@@ -2,7 +2,15 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/HW6/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/HW6/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/HW6/build" />
+      <excludeFolder url="file://$MODULE_DIR$/HW7/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/HW7/target" />
+      <excludeFolder url="file://$MODULE_DIR$/HW8/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/HW8/target" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

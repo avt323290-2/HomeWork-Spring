@@ -11,6 +11,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="HW-1" />
+        <module name="HW9" />
         <module name="homeWork2" />
         <module name="HW-4" />
         <module name="HW3" />
@@ -28,6 +29,7 @@
       <module name="HW-4" options="-parameters" />
       <module name="HW-5" options="-parameters" />
       <module name="HW3" options="-parameters" />
+      <module name="HW9" options="-parameters" />
       <module name="SpringHW5" options="-parameters" />
       <module name="homeWork2" options="-parameters" />
     </option>
