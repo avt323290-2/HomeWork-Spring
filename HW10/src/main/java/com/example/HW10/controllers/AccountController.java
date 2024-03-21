@@ -17,8 +17,11 @@ public class AccountController {
 
     private final TransferService transferService;
 
-
-
+    /**
+     * Перевод денег между счетами.
+     *
+     * @param request объект запроса на перевод денег
+     */
     @PostMapping("/transfer")
     public void transferMoney(
             @RequestBody TransferRequest request
@@ -29,6 +32,12 @@ public class AccountController {
                 request.getAmount());
     }
 
+    /**
+     * Получение списка всех счетов или счетов по имени.
+     *
+     * @param name имя владельца счета (необязательный параметр)
+     * @return список всех счетов или счетов с указанным именем
+     */
     @GetMapping("/accounts")
     public Iterable<Account> getAllAccounts(
             @RequestParam(required = false) String name

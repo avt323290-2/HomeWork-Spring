@@ -13,8 +13,14 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
+/**
+ * Класс, содержащий модульные тесты для проверки функционала перевода денежных средств.
+ */
 public class TransferServiceUnitTests {
 
+    /**
+     * Тест на корректность перевода денежных средств с одного счета на другой.
+     */
     @Test
     @DisplayName("Тест на корректность перевода денежных средств с одного счета на другой.")
     public void moneyTransferHappyFlow() {

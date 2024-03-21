@@ -20,6 +20,9 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 
+/**
+ * Класс, содержащий модульные тесты для класса TransferService с использованием аннотаций Mockito.
+ */
 @ExtendWith(MockitoExtension.class)
 public class TransferServiceWithAnnotationsUnitTests {
     @Mock
@@ -27,6 +30,9 @@ public class TransferServiceWithAnnotationsUnitTests {
     @InjectMocks
     private TransferService transferService;
 
+    /**
+     * Тест проверяет корректность перевода денежных средств с одного счета на другой.
+     */
     @Test
     public void moneyTransferHappyFlow() {
         // Arrange: начальные условия для тестирования
@@ -52,6 +58,9 @@ public class TransferServiceWithAnnotationsUnitTests {
         verify(accountRepository).changeAmount(2, new BigDecimal(1100));
     }
 
+    /**
+     * Тест проверяет сценарий, когда счет получателя отсутствует.
+     */
     @Test
     public void moneyTransferDestinationAccountNotFoundFlow() {
         // Arrange: начальные условия для тестирования

@@ -16,7 +16,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 /**
- * TransferServiceSpringIntegrationTests - класс, реализующий интеграционное тестирование функционала,
+ * Класс, реализующий интеграционное тестирование функционала,
  * обеспечивающего перевод денежных средств с одного счета на другой.
  */
 @SpringBootTest
@@ -26,6 +26,9 @@ class TransferServiceSpringIntegrationTests {
     @Autowired                                     // Обертка для аккаунт-репозитория, работающего с БД
     private TransferService transferService;
 
+    /**
+     * Тест на проверку правильности суммы перевода с одного счета на другой.
+     */
     @Test
     @DisplayName("Тест на проверку правильности суммы перевода с одного счета на другой.")
     void transferServiceTransferAmountTest() {
