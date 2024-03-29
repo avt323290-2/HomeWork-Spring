@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>ПРОСТО О СЛОЖНОМ</title>
+</head>
+<body>
+<div th:switch="${users}">
+    <h2 th:case="null">No users found!</h2>
+    <div th:case="*">
+        <h2>СПИСОК КРУТЫХ "ЧЕЛОВЕКОВ"</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>№ п/п</th>
+                <th>Имя</th>
+                <th>Фамилия</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="user : ${users}">
+                <td th:text="${user.id}"></td>
+                <td th:text="${user.firstName}"></td>
+                <td th:text="${user.lastName}"></td>
+                <td><a th:href="@{user-update/{id}(id=${user.id})}">Edit</a></td>
+                <td><a th:href="@{user-delete/{id}(id=${user.id})}">Delete</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <p><a href="/user-create">ДОБАВИТЬ КРУТОГО ЧЕЛОВЕКА</a></p>
+
+</div>
+<div th:fragment="main-text"></div>
+<div th:fragment="footer">
+    <!--    <p class="center">&#169; img.png</p>-->
+    <img class="Kartinka" src="https://drive.google.com/file/d/1qV-NZh-nRhuju5OBuj6aqG5JC9D19tfI/view?usp=drive_link"
+         Width="800" Height="600" >
+
+    <!--    <Img src="https://proprikol.ru/wp-content/uploads/2019/10/kartinki-amurskij-tigr-23.jpg" Width="1400" Height="1000">-->
+
+</div>
+</div>
+</body>
+</html>
